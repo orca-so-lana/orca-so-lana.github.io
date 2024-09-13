@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "orca",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#0e1342"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/orca_1.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://orca-so-lana.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://orca-so-lana.github.io/sitemap.xml",
+    "mbrsiteDomain": "kt9cruvqb5",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "ORCA | Orca Solana™ | Home Official Site",
+        "meta_descr": "Orca is a decentralized exchange that lets you buy and trade any crypto asset on Solana. Learn more from the Orca community and FAQs.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://orca.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/orca.png\" alt=\"orca\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uoeQSAIMfZ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#edefeb",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#edefeb"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#0e1342\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#0e1342\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Orca on Solana: A Deep Dive into the Leading DeFi Platform</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">As the decentralized finance (DeFi) landscape continues to evolve, various platforms are emerging as leaders in providing innovative financial solutions. One such platform is <a href=\"https://orca-so-lana.github.io/\" class=\"text-primary\">Orca</a>, a decentralized exchange (DEX) built on the Solana blockchain. Known for its user-friendly interface, low transaction fees, and swift transaction speeds, <a href=\"https://www.orca.so/\" class=\"text-primary\">Orca</a> is quickly becoming a go-to solution for traders and liquidity providers in the Solana ecosystem. This blog will explore Orca in detail, discussing its features, benefits, and the role it plays in the burgeoning Solana DeFi space.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Orca?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Orca is a decentralized exchange designed for the Solana blockchain that allows users to trade cryptocurrencies and tokens quickly and efficiently. Launched in 2021, Orca aims to provide a seamless trading experience while emphasizing user engagement and community involvement.<br><br><b>Key Features of Orca:</b><br><b>Automated Market Maker (AMM):</b> Orca employs an AMM model, allowing users to trade assets without the need for an order book. This provides liquidity and enables instant trades at competitive prices.<br><b>User-Friendly Interface:</b> The platform is designed with simplicity in mind, making it accessible even for those new to DeFi. Its intuitive layout allows users to navigate effortlessly between trading, providing liquidity, and exploring analytics.<br><b>Low Fees:</b> One of the standout features of Orca is its low transaction fees. Built on Solana, which boasts high throughput and low costs, Orca users can enjoy nearly instant transactions without hefty fees.<br><b>Liquidity Pools:</b> Users can add liquidity to various trading pairs and earn rewards in the form of transaction fees. This incentivizes participation and helps maintain market liquidity.<br><b>Yield Farming:</b> Orca offers yield farming opportunities, allowing users to stake their liquidity provider (LP) tokens in exchange for additional rewards, enhancing the earning potential for users.<br><b>Cross-Platform Compatibility:</b> Orca is accessible via web browsers and integrates seamlessly with popular wallets, such as Phantom and Sollet, making it easy for users to manage their assets.<br><b>Community Engagement:</b> Orca places a strong emphasis on community involvement, inviting users to participate in governance and decision-making through its native token, ORCA.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Orca Works:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Orca operates on the principles of automated market making, which differs from traditional exchanges' order book models. Here’s a closer look at how it functions:<br><br><b>Automated Market Maker Model</b><br>In an AMM model, users trade against liquidity pools rather than individual buyers and sellers. These pools consist of pairs of tokens that users contribute to in exchange for LP tokens, representing their share of the pool. The AMM algorithm determines the price of tokens based on their supply and demand within the pool, ensuring efficient price discovery.<br><br><b>Liquidity Pools</b><br>Liquidity pools are essential to Orca's functionality. Users can deposit pairs of tokens, creating a pool that traders can access. When users provide liquidity, they earn a portion of the transaction fees generated by trades within that pool. This model encourages users to contribute to liquidity, ensuring that traders can execute their transactions without delays.<br><br><b>Yield Farming</b><br>Orca allows users to engage in yield farming by staking their LP tokens. By locking their tokens in a yield farm, users can earn additional rewards in the form of ORCA tokens. This incentivizes liquidity provision and helps maintain a healthy ecosystem.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Benefits of Using Orca:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Speed and Efficiency</b><br>One of the primary advantages of using Orca is its speed. Built on the Solana blockchain, Orca benefits from Solana's high throughput, enabling thousands of transactions per second. This means users can execute trades almost instantaneously, without the long wait times often associated with other DeFi platforms.<br><br><b>Low Transaction Fees</b><br>Compared to other DEXs, Orca offers significantly lower transaction fees. Solana's architecture allows for minimal costs per transaction, making it an attractive option for traders looking to maximize their profits.<br><br><b>User-Centric Design</b><br>Orca's interface is designed for users of all experience levels. The platform focuses on simplicity and ease of use, making it straightforward for newcomers to navigate the world of DeFi. Helpful tutorials and guides further enhance the user experience.<br><br><b>Strong Community Focus</b><br>Orca actively engages its community, allowing users to participate in governance decisions and contribute to the platform's development. This sense of ownership fosters a strong community spirit, encouraging users to invest in the platform’s success.<br><br><b>Innovative Features</b><br>Orca continuously introduces new features to enhance user experience. For instance, the platform has implemented unique tools like the \"Fair Price Indicator,\" which helps users identify the best prices for their trades. Such innovative solutions set Orca apart from other DEXs.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Getting Started with Orca:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Step 1: Set Up a Wallet</b><br>To start using Orca, you'll need a compatible Solana wallet. Popular options include Phantom and Sollet. Download the wallet of your choice and create a new wallet account. Ensure you securely store your recovery phrase.<br><br><b>Step 2: Fund Your Wallet</b><br>Once your wallet is set up, fund it with SOL tokens. You can purchase SOL on various exchanges like Binance, Coinbase, or Kraken and send it to your wallet. This SOL will be used to pay for transaction fees and to trade on Orca.<br><br><b>Step 3: Connect to Orca</b><br>Visit the Orca website and click on the \"Connect Wallet\" button. Select your wallet provider and follow the prompts to connect your wallet to the Orca platform.<br><br><b>Step 4: Start Trading</b><br>With your wallet connected and funded, you can start trading. Navigate to the trading interface, choose the tokens you wish to trade, and enter the amount. Review the transaction details and confirm the trade.<br><br><b>Step 5: Provide Liquidity</b><br>If you're interested in providing liquidity, head to the liquidity section of Orca. Select the trading pair, enter the amount you want to contribute, and confirm the transaction. You'll receive LP tokens in return, representing your share of the liquidity pool.<br><br><b>Step 6: Engage in Yield Farming</b><br>To maximize your earnings, you can participate in yield farming by staking your LP tokens. Navigate to the yield farming section, select the appropriate farm, and confirm your stake. You'll start earning rewards in ORCA tokens.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Orca's Role in the Solana Ecosystem:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Orca is not just a DEX; it plays a vital role in the broader Solana ecosystem. By facilitating efficient trading and providing liquidity, Orca enhances the overall usability and appeal of Solana as a blockchain for DeFi applications. Its integration with various DeFi projects and NFT platforms further solidifies its position as a cornerstone of the Solana ecosystem.<br><br><b>Supporting Other Projects</b><br>Orca collaborates with various protocols and projects within the Solana ecosystem, including lending platforms, NFT marketplaces, and other DeFi applications. This collaborative approach helps create a more interconnected and robust DeFi landscape on Solana.<br><br><b>Driving Adoption</b><br>By offering a user-friendly and efficient trading platform, Orca is helping drive the adoption of Solana. As more users discover the benefits of low fees and high-speed transactions, the demand for Solana-based applications is likely to increase, contributing to the overall growth of the ecosystem.<br><br><b>Educational Initiatives</b><br>Orca is committed to educating its users about DeFi and the Solana blockchain. Through tutorials, webinars, and community engagement, the platform helps users understand the intricacies of decentralized finance, empowering them to make informed decisions.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Future Developments:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Orca is continuously evolving, with plans for future developments that will enhance its features and user experience. Some anticipated improvements include:<br><br><b>Enhanced Cross-Chain Compatibility</b><br>As the DeFi landscape expands, cross-chain capabilities will become increasingly important. Orca is exploring options to integrate with other blockchains, allowing users to trade assets across different ecosystems seamlessly.<br><br><b>New Trading Features</b><br>Orca plans to introduce additional trading features, such as limit orders, to provide users with more control over their trades. These enhancements will cater to more experienced traders looking for advanced trading options.<br><br><b>Improved Analytics Tools</b><br>To better serve its users, Orca aims to develop advanced analytics tools that provide insights into trading volumes, liquidity depths, and price trends. This information will help users make informed trading decisions.<br><br><b>Community Governance</b><br>As Orca continues to grow, the platform will increasingly involve its community in governance decisions. This approach will empower users to have a say in the platform's future direction and development.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Orca is a pioneering decentralized exchange that has quickly established itself as a leader in the Solana ecosystem. With its user-friendly interface, low fees, and efficient trading capabilities, Orca is making DeFi accessible to a broader audience. Its commitment to community engagement, innovative features, and continuous development positions it as a vital player in the rapidly evolving DeFi landscape.<br><br>As the Solana ecosystem continues to grow, Orca will undoubtedly play a crucial role in shaping its future. For anyone looking to explore decentralized finance on the Solana blockchain, Orca offers a comprehensive and rewarding experience that empowers users to take control of their financial journeys. Whether you’re a seasoned trader or just starting, Orca provides the tools and resources to thrive in the exciting world of DeFi.<br><br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uoeQSQ2ltH",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
